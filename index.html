@@ -10,12 +10,21 @@
             background: rgb(30, 49, 49);
             height: 100%;
             width: 100%;
+            animation: toggle 3s;
         }
         .centered {
             display: grid;
             place-items: center;
             color: white;
             font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+        @keyframes toggle {
+            from {
+                transform: rotate3d(2, -5, -5, -0.6turn);
+            }
+            to {
+                transform: rotate3d(0);
+            }
         }
     </style>
 </head>
